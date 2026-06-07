@@ -9,7 +9,6 @@ int toneCount = 8;
 void setup()
 {
   Serial.begin(115200);
-  Serial.println("Piezo Tone Example");
 }
 
 void loop()
