@@ -5,8 +5,8 @@ void setup()
   TCCR1A = _BV(COM1A0);
   TCCR1B = _BV(WGM12) | _BV(CS10);
   
-  // 40 kHz output:
-  OCR1A = 199;
+  // 40 kHz output at 199; 400 Hz at 1990:
+  OCR1A = 1990;
 
   pinMode(ULTRASONIC_PIN, OUTPUT);
 }
